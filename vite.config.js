@@ -4,10 +4,11 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { globalStylesOptions } from './global.styles';
+import { defineConfig } from 'vite';
 
 export default defineConfig(({ command }) => {
   return {
-    base: '/stp-8889-team/',
+    base: '/mythwalker-landing/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
